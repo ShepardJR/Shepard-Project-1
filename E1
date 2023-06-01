@@ -1,0 +1,86 @@
+<html>
+<style>
+
+.para1 {font-family: Times
+}
+.para2 {font-family: Times
+}
+.para3 {font-family: Times
+}
+
+</style>
+<body>
+
+<p id = para1> The Law Of Cosines </p>
+<p id = para2> Basic Trig </p>
+<p id = para3> The law of Cosines is  C^2 = A^2 + B^2 - 2ab cos(C)  , using this formula you can calculate any number of different angles and sides on irregular triangles, this makes it one of the most useful formulas in trigonometry!  </p>
+
+<button id=cristmas onclick="chrisColor()">Cristmas</button>
+<button id=holloween onclick="hollowColor()">Holloween</button>
+<button id=easter onclick="eastColor()">Easter</button>
+
+</body>
+
+<script>
+
+
+function chrisColor(){
+  HeadStyle.color = "#c54245"
+  document.body.style.background = "#00873E"
+  subStyle.color = "#c54245"
+  textStyle.border = "5px solid black"
+  textStyle.backgroundColor = "silver"
+}
+
+function hollowColor(){
+  HeadStyle.color = "#E66C2C"
+  document.body.style.background = "black"
+  subStyle.color = "#522F6A"
+  textStyle.border = "5px solid silver"
+  textStyle.backgroundColor = "white"
+}
+
+function eastColor(){
+  HeadStyle.color = "#e6a2c1"
+  document.body.style.background = "#FDEB9D"
+  subStyle.color = "#e6a2c1"
+  textStyle.border = "5px solid silver"
+  textStyle.backgroundColor = "#3Ed1EE"
+
+}
+
+
+var Header = document.getElementById("para1")
+var HeadStyle = Header.style
+para1.setAttribute("style", "position: relative")
+HeadStyle.fontSize = "400%"
+HeadStyle.left = "400px"
+HeadStyle.right = "400px"
+
+var Sub = document.getElementById("para2")
+var subStyle = Sub.style;
+para2.setAttribute("style", "position: relative")
+subStyle.left = "600px"
+subStyle.fontSize = "200%"
+
+
+var Text = document.getElementById("para3")
+var textStyle = Text.style;
+para3.setAttribute("style", "position: relative")
+textStyle.marginLeft = "400px"
+textStyle.marginRight = "400px"
+
+
+var Cristmas = document.getElementById("cristmas")
+var crisStyle = Cristmas.style;
+crisStyle.color = "red"
+
+var Holloween = document.getElementById("holloween")
+var hollowStyle = Holloween.style;
+hollowStyle.color = "orange"
+
+var Easter = document.getElementById("easter")
+var easterStyle = Easter.style;
+easterStyle.color = "pink"
+</script>
+</html>
